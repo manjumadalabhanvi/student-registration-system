@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A simple student registration system" />
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <!-- Header -->
+  <section class="header-section">
+    <header>
+      <h1 id="heading">Student Registration System</h1>
+      <p id="intro-para">
+        Register, update, and manage student records quickly and easily.
+      </p>
+    </header>
+  </section>
+
+  <!-- Form -->
+  <section id="form-section">
+    <h1>Enter Student Details</h1>
+    <form id="studentForm">
+      <div class="form-items">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="form-items">
+        <label for="id">Student ID</label>
+        <input type="text" id="id" name="id" />
+      </div>
+      <div class="form-items">
+        <label for="email">Student Email</label>
+        <input type="text" id="email" name="email" />
+      </div>
+      <div class="form-items">
+        <label for="contact">Contact Number</label>
+        <input type="text" id="contact" name="contact" />
+      </div>
+      <button type="submit" id="submitBtn">Register Now</button>
+    </form>
+  </section>
+
+  <!-- Display Table -->
+  <section id="display-section">
+    <h1>Registered Students</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Contact</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
